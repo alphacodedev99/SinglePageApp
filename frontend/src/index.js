@@ -8,11 +8,17 @@ import {
 } from 'react-router-dom';
 import SingleChampion from './pages/SingleChampion';
 import AllChampion from './pages/AllChampion';
-
+import { Provider } from 'react-redux';
+import store from './store/store';
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <App />,
+		element: (
+			<Provider store={store}>
+				{' '}
+				<App />
+			</Provider>
+		),
 		children: [
 			{
 				path: '/champion/:id',
