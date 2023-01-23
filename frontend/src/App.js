@@ -1,7 +1,9 @@
+import { Outlet } from 'react-router-dom';
+
 function App() {
 	return (
-		<div>
-			<h1 className='text-4xl'>Radi</h1>
+		<div className='container mx-auto'>
+			<Outlet />
 		</div>
 	);
 }

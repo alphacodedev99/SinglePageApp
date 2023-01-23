@@ -20,6 +20,7 @@
   "homepage": "https://github.com/alphacodedev99/SinglePageApp#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "lol-champions": "^10.23.1",
     "nodemon": "^2.0.20"
   }
 }
