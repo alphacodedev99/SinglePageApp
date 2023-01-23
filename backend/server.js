@@ -1,17 +1,15 @@
 const express = require('express');
+const cors = require('cors');
 let lolChampions = require('lol-champions');
-console.log('====================================');
-console.log(lolChampions);
-console.log('====================================');
 
 const app = express();
+
+app.use(cors());
 
 app.get('/', (req, res) => {
 	res.send(lolChampions);
 });
 
 app.listen(8800, () => {
-	console.log('====================================');
 	console.log('RADI SRW');
-	console.log('====================================');
 });
